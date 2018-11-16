@@ -1,18 +1,146 @@
 % !TEX root =../Electric Appliances.tex
+\chapter{復習}
+\section{行列}
+ユニタリ行列\\
+\begin{align}
+\bm{U} \bm{U}^{*} =  \bm{U}^{*} \bm{U} = \bm{E}
+\end{align}
+随伴行列またはエルミート行列\\
+エルミート共役
+\begin{align}
+\bm{U}^{*} = {}^{t} \overline {\bm{U}} 
+\end{align}
+$\bm{A}$が実行列のとき$\bm{A}$の随伴行列$\bm{A}^{*}$は
+\begin{align}
+\bm{A}^{*} =  {}^{t} \bm{A}
+\end{align}
+
+複素共役行列\\
+ダイナミックブレーキ\\
+回生ブレーキ\\
+
+
 \chapter{電動機}
+\section{モータの歴史}
+ニコラ・テスラ\\
+電動機と呼ばれる．\\
+同期電動機あるいは単に同期機\\
+誘導電動機あるいは単に誘導機\\
+\section{電動機の分類}
+\begin{enumerate}
+\item DCモータ
+	\begin{enumerate}
+	\item 永久磁石界磁型
+	\item 電磁石界磁型
+		\begin{enumerate}
+		\item 分巻モータ
+		\item 直巻モータ
+		\item 他励モータ
+		\end{enumerate}
+	\end{enumerate}
+\item ブラシレスDCモータ 
+	\begin{enumerate}
+	\item 表面磁石型
+	\item 埋込磁石型
+	\end{enumerate}
+\item 交流モータ 
+	\begin{enumerate}
+	\item 整流子型モータ
+	\item 同期モータ
+	\item 誘導モータ
+	\end{enumerate}
+\item スイッチドレラクタンスモータ
+\item ステッピングモータ
+\item 超音波モータ
+\end{enumerate}
+
+
+\chapter{直流機}
+\section{回転機械の持つエネルギー}
+\subsection{慣性質量と慣性モーメント}
+\begin{align}
+F=m \alpha = m \drv{v}{t} = m \sdrv{x}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+\tau =\int F dx =\int m \drv{v}{t} dx =\int m v dv = \frac{1}{2} m v^{2} \mathrm{[J]}
+\end{align}
+
+\begin{align}
+v =\drv{x}{t} = r \drv{\theta}{t} = r \omega \mathrm{[m/s]}
+\end{align}
+
+\begin{align}
+F = m \drv{t}{v} = m r \drv{\omega}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+T = Fr = mr^{2} \drv{\omega}{t} = I \drv{\omega}{t} = I \sdrv{\theta}{t} \mathrm{[N]}
+\end{align}
+Iは慣性モーメント\\
+\subsection{慣性モーメントの定義}
+トルクはそれぞれの物体が回転するために必要なトルクの合計になるので
+\begin{align}
+T = \sum_{i=1}^{n} F_{i}r_{i} = \sum_{i=1}^{n} m_{i} r^{2}_{i} \drv{\omega}{t} = I \drv{\omega}{t}
+\end{align}
+となり，慣性モーメント$I$は
+\begin{align}
+I = \sum_{i=1}^{n} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \sum_{i=1}^{\infty} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \int r^{2} dm
+\end{align}
+
+\section{誘導起電力の発生}
+界磁巻線\\
+分巻\\
+複巻\\
+他励\\
+励磁\\
+\chapter{誘動機}
+\section{円線図}
+誘導電動機\\
+滑り\\
+\begin{align}
+s=\dfrac{N_{s}-N}{N_{s}}
+\end{align}
+無負荷時は
+\begin{align}
+s=0
+\end{align}
+始動時は
+\begin{align}
+s=1
+\end{align}
+
+\chapter{同期機}
+複巻
+直巻
+分巻
+他励式
+自励式
+界磁
+磁界
+電気角
+機械角
 
 同期インピーダンス
 \begin{align}
-Z = \sqrt{r_{a}^{2} + r_{x}^{s}} \mathrm{[\Omega]}
+Z = \sqrt{r_{a}^{2} + r_{x}^{s}} \mathrm{[\Ohm]}
 \end{align}
 同期インピーダンス
 \begin{align}
-Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Omega]}
+Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Ohm]}
 \end{align}
 
 同期インピーダンス
 \begin{align}
-Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Omega]}
+Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Ohm]}
 \end{align}
 
 百分率同期インピーダンス
@@ -56,62 +184,7 @@ T=Fr
 J=mr^{2} \mathrm{[kg \cdot m^{2}]}
 \end{align}
 
-\chapter{モータの分類と区分}
-\section{モータの歴史}
-ニコラ・テスラ\\
-電動機と呼ばれる．\\
-同期電動機あるいは単に同期機\\
-誘導電動機あるいは単に誘導機\\
 
-\section{モータの分類}
-
-\begin{enumerate}
-\item DCモータ
-	\begin{enumerate}
-	\item 永久磁石界磁型
-	\item 電磁石界磁型
-		\begin{enumerate}
-		\item 分巻モータ
-		\item 直巻モータ
-		\item 他励モータ
-		\end{enumerate}
-	\end{enumerate}
-\item ブラシレスDCモータ 
-	\begin{enumerate}
-	\item 表面磁石型
-	\item 埋込磁石型
-	\end{enumerate}
-\item 交流モータ 
-	\begin{enumerate}
-	\item 整流子型モータ
-	\item 同期モータ
-	\item 誘導モータ
-	\end{enumerate}
-\item スイッチドレラクタンスモータ
-\item ステッピングモータ
-\item 超音波モータ
-\end{enumerate}
-銅損\\
-鉄損\\
-
-
-\section{誘導電動機}
-誘導電動機\\
-滑り\\
-\begin{align}
-s=\dfrac{N_{s}-N}{N_{s}}
-\end{align}
-無負荷時は
-\begin{align}
-s=0
-\end{align}
-始動時は
-\begin{align}
-s=1
-\end{align}
-
-
-\section{同期電動機}
 
 同期速度\\
 \begin{align}
@@ -167,446 +240,9 @@ L_{a} \drv{i(t)}{t} + R_{a} \frac{\tau(t)}{K_{\tau}} + K_{e} \drv{\theta(t)}{t} 
 \begin{align}
 \frac{L_{a}J}{K_{\tau}} \frac{d^{2} \omega(t)}{dt^{2}} + \left( \frac{L_{a}D}{K_{\tau}} + \frac{R_{a}J}{K_{\tau}} \right) \drv{\omega(t)}{t} + \left( \frac{R_{a}D}{K_{\tau}} +K_{e} \right)\omega(t) =e(t)
 \end{align}
-\chapter{電力伝送}
-架空送電線\\
-許容電流\\
-コロナ\\
-コロナ放電\\
-電力損失\\
-電圧降下\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{DCモータ}
-界磁巻線\\
-分巻\\
-複巻\\
-他励\\
-励磁\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{永久磁石同期モータ}
-\section{ブラシレスモータの概要}
-\subsection{ブラシレスとは}
-永久磁石同期モータ(Permanent-Magnet Synchronous Motor,PMSM)\\
-PMSMは永久磁石直流モータ(Permanent-Magnet DC Motor)と同様に永久磁石によって界磁を得ている．永久磁石は回転子(Rotor)側に取り付けられ，発生する界磁(Field)は回転界磁(Revolving Field)となる．\\
-ブラシレスモータは単相もしくは三相交流で動作する．\\
-インバータ回路を内蔵しているものを特にブラシレスDCモータという．\\
-\\
-\subsection{突極型と非突極型}
-突極型\\
-非突極型\\
-\\
-\subsection{回転子の構造}
-回転子永久磁石による分類\\
-埋込磁石型(Interior-type PMSM,IPMSM)\\
-表面磁石型(Surface-type PMSM,SPMSM)\\
-
-\subsection{電機子の構造}
-モータのトルク\\
-\begin{align}
-\tau = Ki \hspace{3mm}(K= const.)
-\end{align}
-
-\begin{align}
-i = \frac{1}{Ls-R}(v-K \omega)
-\end{align}
-
-\subsection{固定子巻線}
-集中巻巻線\\
-分布巻巻線
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{PSIMの数学モデル}
-$n$行$n$列正方行列$\bm{A}$を考える．\\
-直交行列の条件は
-\begin{enumerate}
-\item aaa
-\item aaa
-\item aaa
-\end{enumerate}
-\begin{align}
-{}^{t} \bm{A} = \bm{A}^{-1}
-\end{align}
-
-\begin{align}
-\bm{A} =
-\begin{pmatrix}
-\bm{a_{1}} & \bm{a_{2}} & \bm{a_{3}} & \cdots \bm{a_{n}}
-\end{pmatrix}
-\end{align}
-
-\begin{align}
-\bm{{}^{t} a_{i}a_{j}} =
-\begin{cases}
-1 & (i=j)\\
-0 & (otherwise)
-\end{cases}
-\end{align}
-
-\begin{align}
-{}^{t} \bm{A} \bm{A} &= \bm{E}\\
-\bm{A} {}^{t} \bm{A} &= \bm{E}
-\end{align}
-ここで$\bm{E}$は$n \times n$単位行列
-
-回転行列
-\begin{align}
-\bm{R} (\theta) =
-\begin{pmatrix}
-\cos \theta & -\sin \theta \\
-\sin \theta &  \cos \theta
-\end{pmatrix}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-回転磁界\\
-機械角$\theta_{m}$と電気角$\theta_{e}$間には
-\begin{align}
-\theta_{e} = \frac{P_{m}}{2} \theta_{m}
-\end{align}
-なる関係が存在する．\\
-
-ブラシ\\
-電機子\\
-整流子\\
-コンバータ\\
-\section{界磁と界磁電流}
-界磁とは，整流子機や同期機を電動機または発電機として使用するときに磁界を発生させる固定子または回転子である．界磁の発生には永久磁石や電磁石などが使用される．
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-クラーク変換\\
-磁気特性\\
-磁気\\
-磁性\\
-\begin{align}
-F=k\frac{m_{1}m_{2}}{r^{2}} \mathrm{[N]}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-磁界\\
-力行\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{align}
-P= I^{2}R = \frac{V^{2}}{R} = IV \mathrm{[W]}
-\end{align}
-
-\begin{align}
-J=\half LI^{2} \mathrm{[J]}
-\end{align}
-
-\begin{align}
-J=\half CV^{2} \mathrm{[J]} 
-\end{align}
-
-機械エネルギー\\
-電気エネルギー\\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{ベクトル制御}
-三相二相変換\\
-\subsection{$dq$座標と$dq$変換}
-$dq$変換\\
-\begin{align}
-d=a \cos \phi - b \sin \phi \\
-q=a \sin \phi - b \cos \phi 
-\end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{align}
-{}^{dq} \bm{C} _{ab} = 
-\begin{pmatrix}
-\sin \phi & -\cos \phi\\
-\cos \phi & \sin \phi
-\end{pmatrix}
-\end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{align}
-\begin{pmatrix}
-d\\
-q
-\end{pmatrix}=
-\begin{pmatrix}
-\sin \phi & -\cos \phi\\
-\cos \phi & \sin \phi
-\end{pmatrix}
-\begin{pmatrix}
-a\\
-b
-\end{pmatrix}
-\end{align}
-
-
-
-\subsection{park変換と逆park変換}
-\begin{align}
-\begin{pmatrix}
-i_{d} \\ i_{q} \\ 0
-\end{pmatrix}=\sqrt{\frac{2}{3}}
-\begin{pmatrix}
-\cos \theta & \cos \left( \theta - \dfrac{2}{3} \pi \right) & \cos \left( \theta + \dfrac{2}{3} \pi \right) \\[1.5ex]
--\sin \theta & -\sin \left( \theta - \dfrac{2}{3} \pi \right) & -\sin \left( \theta + \dfrac{2}{3} \pi \right) \\[1.5ex]
-\dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}} \\
-\end{pmatrix}
-\begin{pmatrix}
-i_{u} \\ i_{v} \\ i_{w}
-\end{pmatrix}
-\end{align}
-
-\begin{align}
-\begin{pmatrix}
-i_{u} \\ i_{v} \\ i_{w}
-\end{pmatrix}=\sqrt{\frac{2}{3}}
-\begin{pmatrix}
-\cos \theta 						& -\sin \theta 							&  \dfrac{1}{\sqrt{2}}\\[1.5ex]
-\cos \left( \theta - \dfrac{2}{3} \pi \right) 	& -\sin \left( \theta - \dfrac{2}{3} \pi \right) 		& \dfrac{1}{\sqrt{2}} \\[1.5ex]
-\cos \left( \theta + \dfrac{2}{3} \pi \right)	& -\sin \left( \theta + \dfrac{2}{3} \pi \right) 		& \dfrac{1}{\sqrt{2}} \\
-\end{pmatrix}
-\begin{pmatrix}
-i_{d} \\ i_{q} \\ 0
-\end{pmatrix}
-\end{align}
-
-絶対返還の条件
-\begin{align}
-{}^{t} \bm{C} \bm{C} = \bm{I}
-\end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-定出力領域\\
-加速定数\\
-パワーレイト\\
-定出力領域\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-自己インダクタンス\\
-\begin{align}
-L= \frac{N \phi}{i} \mathrm{[H]}
-\end{align}
-
-
-寄生インダクタンス\\
-寄生容量\\
-
-
-相互誘導\\
-相互誘導結合の強さ\\
-結合係数
-\begin{align}
-\kappa = \frac{M}{\sqrt{L_{1} L_{2}}}
-\end{align}
-
-漏れ係数(leakage Coefficient)
-\begin{align}
-\sigma = 1 - \kappa^2 = \frac{M^{2} }{L_{1} L_{2}}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-同相インダクタンス$L_{i}$(in-phase inductance),鏡相インダクタンス$L_{m}$(mirror-phase inductance)
-\begin{align}
-\begin{pmatrix}
-L_{i}\\
-L_{m}
-\end{pmatrix}= \frac{1}{2}
-\begin{pmatrix}
-1	&	1\\
-1	&	-1
-\end{pmatrix}
-\begin{pmatrix}
-L_{d}\\
-L_{q}
-\end{pmatrix}
-\end{align}
-同相インダクタンスは$d$軸，$q$軸インダクタンスの平均
-
-自己誘導\\
-機械的動特性\\
-モデルベース\\
-面積素ベクトル\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{align}
-i= \drv{q}{t} \mathrm{[A]}
-\end{align}
-回路方程式\\
-\begin{align}
-v_{R}&=Ri \mathrm{[V]}\\
-v_{L} &= L \drv{i}{t} \mathrm{[V]}\\
-v_{C} &= \frac{1}{C} \int i dt \mathrm{[V]}
-\end{align}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{ベクトル制御のアルゴリズム}
-\subsection{ブラシレスモータ の解析モデル}
-鎖交磁束$\phi_{u}$$\phi_{v}$$\phi_{w}$\\
-電圧$v_{u}$$v_{v}$$v_{w}$\\
-電流$i_{u}$$i_{v}$$i_{w}$\\
-
-\subsection{ブラシレスモータ の$dq$変換}
-
-\begin{align}
-C=\sqrt{\frac{2}{3}}
-\begin{pmatrix}
-\cos \theta & \cos \left( \theta - \dfrac{2}{3} \pi \right) & \cos \left( \theta + \dfrac{2}{3} \pi \right) \\[1.5ex]
--\sin \theta & -\sin \left( \theta - \dfrac{2}{3} \pi \right) & -\sin \left( \theta + \dfrac{2}{3} \pi \right) \\[1.5ex] 
-\end{pmatrix}
-\end{align}
-
-\begin{align}
-\begin{pmatrix}
-v_{d}\\
-v_{q}\\
-\end{pmatrix}
-=\bm{C}
-\begin{pmatrix}
-v_{u}\\
-v_{v}\\
-v_{w}\\
-\end{pmatrix}
-\end{align}
-この座標変換により$dq$座標系での電圧方程式は
-\begin{align}
-\begin{pmatrix}
-v_{d}\\
-v_{q}\\
-\end{pmatrix}
-=
-\begin{pmatrix}
-R_{a}+pL_{d} & - \omega L_{q}\\
-\omega L_{q} & R_{a}+p L_{q}\\
-\end{pmatrix}
-\begin{pmatrix}
-i_{d}\\
-i_{q}\\
-\end{pmatrix}
-+
-\begin{pmatrix}
-0\\
-\omega \phi_{a}
-\end{pmatrix}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-直交変換\\
-状態方程式\\
-ベクトル\\
-状態\\
-相互インダクタンス\\
-周期\\
-\begin{align}
-T= \frac{1}{f} \mathrm{[s]}
-\end{align}
-
-周波数\\
-\begin{align}
-f = \frac{1}{T} \mathrm{[Hz]}
-\end{align}
-
-高調波\\
-
-
-着磁\\
-ホールセンサ\\
-
-シャント抵抗\\
-作動増幅回路\\
-
-\section{電動機の損失}
-全損失\\
-固定損\\
-鉄損 \\
-ヒステリシス損\\
-渦電流損\\
-
-機械損\\
-軸受\\
-冷却装置の摩擦損\\
-風損\\
-
-負荷損\\
-抵抗損 (銅損)\\ 
-一次抵抗損\\
-二次抵抗損\\
-漂遊負荷損\\
-\section{インバータ}
-VVVF\\
-可変電圧可変周波数制御\\
-サイリスタ位相制御
-
-
-回転数$N\mathrm{[rpm]}$\\
-渦電流\\
-電磁誘導\\
-右ねじの法則\\
-ファラデーの電磁誘導の法則\\
-\begin{align}
-V=-N\frac{\Delta \phi}{ \Delta t} = L \drv{i}{t}
-\end{align}
-
-\begin{align}
-\phi = B \cdot s
-\end{align}
-
-D因子\\
-新中\\
-
-\begin{align}
-B = \mu H 
-\end{align}
-磁力線\\
-磁束\\
-磁化\\
-磁区\\
-
-
-\begin{align}
-\oint_{s}= \bm{E} \cdot d \bm{s} = - \frac{d \phi_{B}}{d t}
-\end{align}
-
-\begin{align}
-\nabla \times \bm{E} = - \frac{\partial \bm{B} }{\partial t}
-\end{align}
-レンツの法則\\
-ローレンツ力\\
-発電機\\
-電動機\\
-減速機\\
-フレミングの法則\\
-脱調\\
-定動トルク\\
-始動トルク\\
-ストールトルク\\
-ローレンツ力\\
-
-負荷\\
-磁性体\\
-コイル\\
-ステートコイル\\
-テスラコイル\\
-ソレノイド\\
-整流子\\
-\chapter{復習}
-\section{行列}
-ユニタリ行列\\
-\begin{align}
-\bm{U} \bm{U}^{*} =  \bm{U}^{*} \bm{U} = \bm{E}
-\end{align}
-随伴行列またはエルミート行列\\
-エルミート共役
-\begin{align}
-\bm{U}^{*} = {}^{t} \overline {\bm{U}} 
-\end{align}
-$\bm{A}$が実行列のとき$\bm{A}$の随伴行列$\bm{A}^{*}$は
-\begin{align}
-\bm{A}^{*} =  {}^{t} \bm{A}
-\end{align}
-
-複素共役行列\\
-ダイナミックブレーキ\\
-回生ブレーキ\\
+\chapter{発電機}
+\chapter{変圧器}
+\section{変圧器の結線}
 

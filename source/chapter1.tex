@@ -19,6 +19,66 @@ $\bm{A}$が実行列のとき$\bm{A}$の随伴行列$\bm{A}^{*}$は
 ダイナミックブレーキ\\
 回生ブレーキ\\
 
+\chapter{力学}
+\section{質点の力学}
+\begin{align}
+F=m \alpha = m \drv{v}{t} = m \sdrv{x}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+\tau =\int F dx =\int m \drv{v}{t} dx =\int m v dv = \frac{1}{2} m v^{2} \mathrm{[J]}
+\end{align}
+
+\begin{align}
+v =\drv{x}{t} = r \drv{\theta}{t} = r \omega \mathrm{[m/s]}
+\end{align}
+
+\begin{align}
+F = m \drv{t}{v} = m r \drv{\omega}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+T = Fr = mr^{2} \drv{\omega}{t} = I \drv{\omega}{t} = I \sdrv{\theta}{t} \mathrm{[N \cdot m]}
+\end{align}
+Iは慣性モーメント\\
+
+\begin{align}
+I = mv_{b} - mv_{a} = \int_{t_{a}}^{t_{b}} \bm{F} dt \mathrm{[N \cdot s]}
+\end{align}
+力積\\
+\\
+\\
+\\
+\begin{align}
+K = \int T dx = \frac{1}{2} I \omega^{2}
+\end{align}
+\section{剛体の運動}
+\subsection{剛体の自由度}
+トルクはそれぞれの物体が回転するために必要なトルクの合計になるので
+\begin{align}
+T = \sum_{i=1}^{n} F_{i}r_{i} = \sum_{i=1}^{n} m_{i} r^{2}_{i} \drv{\omega}{t} = I \drv{\omega}{t}
+\end{align}
+となり，慣性モーメント$I$は
+\begin{align}
+I = \sum_{i=1}^{n} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \sum_{i=1}^{\infty} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \int r^{2} dm = I \drv{\omega}{t} = \int \rho r^{2} dV
+\end{align}
+
+\subsection{剛体の運動方程式}
+\begin{align}
+\sum_{i}^{n} \bm{F}_{j} = m \sdrv{\bm{r_{g}}}{t}
+\end{align}
+
+\begin{align}
+\drv{\bm{L}}{t} = \sum_{i}^{n} \left( \bm{r}_{i} \times \bm{F_{i}} \right) = \bm{N}
+\end{align}
 
 \chapter{電動機}
 \section{モータの歴史}
@@ -54,54 +114,44 @@ $\bm{A}$が実行列のとき$\bm{A}$の随伴行列$\bm{A}^{*}$は
 \item 超音波モータ
 \end{enumerate}
 
-
 \chapter{直流機}
-\section{回転機械の持つエネルギー}
-\subsection{慣性質量と慣性モーメント}
+\section{直流機の構造}
+波巻\\
+重ね巻\\
+\section{直流機の誘導起電力と大きさ}
+円周の長さは
 \begin{align}
-F=m \alpha = m \drv{v}{t} = m \sdrv{x}{t} \mathrm{[N]}
+l = 2 \pi r = \pi D
 \end{align}
 
 \begin{align}
-\tau =\int F dx =\int m \drv{v}{t} dx =\int m v dv = \frac{1}{2} m v^{2} \mathrm{[J]}
+v = \pi D \dfrac{N}{60} \mathrm{[m/s]}
 \end{align}
 
 \begin{align}
-v =\drv{x}{t} = r \drv{\theta}{t} = r \omega \mathrm{[m/s]}
+B = \dfrac{2p \phi}{\pi D l} \mathrm{[T]}
 \end{align}
 
 \begin{align}
-F = m \drv{t}{v} = m r \drv{\omega}{t} \mathrm{[N]}
+e = Blv = \dfrac{2p \phi}{\pi D l} \cdot l \cdot \pi \cdot D \frac{n}{60} = \frac{2p \phi n}{60} \mathrm{[V]}
 \end{align}
 
 \begin{align}
-T = Fr = mr^{2} \drv{\omega}{t} = I \drv{\omega}{t} = I \sdrv{\theta}{t} \mathrm{[N]}
-\end{align}
-Iは慣性モーメント\\
-\subsection{慣性モーメントの定義}
-トルクはそれぞれの物体が回転するために必要なトルクの合計になるので
-\begin{align}
-T = \sum_{i=1}^{n} F_{i}r_{i} = \sum_{i=1}^{n} m_{i} r^{2}_{i} \drv{\omega}{t} = I \drv{\omega}{t}
-\end{align}
-となり，慣性モーメント$I$は
-\begin{align}
-I = \sum_{i=1}^{n} m_{i} r^{2}_{i}
+e = \frac{2a}{z} = \frac{2p \phi n}{60} \cdot \frac{z}{2a} = \frac{p}{60} \cdot \frac{z}{a} \phi n = k \phi n  \mathrm{[V]}  \left( k = \frac{pz}{60a}: \mathrm{電圧定数} \right)
 \end{align}
 
-\begin{align}
-I = \sum_{i=1}^{\infty} m_{i} r^{2}_{i}
-\end{align}
+\section{直流機の電機子反作用}
+\subsection{電機子反作用}
+幾何学的中性軸\\
+磁束\\
+偏磁作用\\
+交差磁化作用\\
+界磁\\
+磁束分布の偏り\\
+電気的中性軸\\
+\subsection{補極と補償巻線}
+\subsection{整流}
 
-\begin{align}
-I = \int r^{2} dm
-\end{align}
-
-\section{誘導起電力の発生}
-界磁巻線\\
-分巻\\
-複巻\\
-他励\\
-励磁\\
 \chapter{誘動機}
 \section{円線図}
 誘導電動機\\

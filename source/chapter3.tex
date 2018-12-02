@@ -1,0 +1,287 @@
+% !TEX root =../Electric Appliances.tex
+\chapter{電動機}
+\section{モータの歴史}
+ニコラ・テスラ\\
+電動機と呼ばれる．\\
+同期電動機あるいは単に同期機\\
+誘導電動機あるいは単に誘導機\\
+\section{電動機の分類}
+\begin{enumerate}
+\item DCモータ
+	\begin{enumerate}
+	\item 永久磁石界磁型
+	\item 電磁石界磁型
+		\begin{enumerate}
+		\item 分巻モータ
+		\item 直巻モータ
+		\item 他励モータ
+		\end{enumerate}
+	\end{enumerate}
+\item ブラシレスDCモータ 
+	\begin{enumerate}
+	\item 表面磁石型
+	\item 埋込磁石型
+	\end{enumerate}
+\item 交流モータ 
+	\begin{enumerate}
+	\item 整流子型モータ
+	\item 同期モータ
+	\item 誘導モータ
+	\end{enumerate}
+\item スイッチドレラクタンスモータ
+\item ステッピングモータ
+\item 超音波モータ
+\end{enumerate}
+
+\chapter{直流機}
+\section{直流機の構造}
+波巻\\
+重ね巻\\
+\section{直流機の誘導起電力と大きさ}
+円周の長さは
+\begin{align}
+l = 2 \pi r = \pi D
+\end{align}
+
+\begin{align}
+v = \pi D \dfrac{N}{60} \mathrm{[m/s]}
+\end{align}
+
+\begin{align}
+B = \dfrac{2p \phi}{\pi D l} \mathrm{[T]}
+\end{align}
+
+\begin{align}
+e = Blv = \dfrac{2p \phi}{\pi D l} \cdot l \cdot \pi \cdot D \frac{n}{60} = \frac{2p \phi n}{60} \mathrm{[V]}
+\end{align}
+
+\begin{align}
+e = \frac{2a}{z} = \frac{2p \phi n}{60} \cdot \frac{z}{2a} = \frac{p}{60} \cdot \frac{z}{a} \phi n = k \phi n  \mathrm{[V]}  \left( k = \frac{pz}{60a}: \mathrm{電圧定数} \right)
+\end{align}
+
+\section{直流機の電機子反作用}
+\subsection{電機子反作用}
+幾何学的中性軸\\
+磁束\\
+偏磁作用\\
+交差磁化作用\\
+界磁\\
+磁束分布の偏り\\
+電気的中性軸\\
+\subsection{補極と補償巻線}
+\subsection{整流}
+
+\chapter{誘動機}
+\section{円線図}
+誘導電動機\\
+滑り\\
+\begin{align}
+s=\dfrac{N_{s}-N}{N_{s}}
+\end{align}
+無負荷時は
+\begin{align}
+s=0
+\end{align}
+始動時は
+\begin{align}
+s=1
+\end{align}
+
+\chapter{同期機}
+複巻\\
+直巻\\
+分巻\\
+他励式\\
+自励式\\
+界磁\\
+磁界\\
+電機子$p$\\
+電気角$\theta{e}$\\
+機械角$\theta{m}$
+\begin{align}
+\theta_{e} = p \theta{m}
+\end{align}
+
+同期インピーダンス
+\begin{align}
+Z = \sqrt{r_{a}^{2} + r_{x}^{s}} \mathrm{[\Ohm]}
+\end{align}
+同期インピーダンス
+\begin{align}
+Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Ohm]}
+\end{align}
+
+同期インピーダンス
+\begin{align}
+Z = \dfrac{V_{n}}{\sqrt{3} I_{s}} \mathrm{[\Ohm]}
+\end{align}
+
+百分率同期インピーダンス
+\begin{align}
+\% Z = \dfrac{Z_{s} I_{n}} {\dfrac{V_{n}}{\sqrt{3}}} \times 100 \mathrm{[\%]}\\
+\end{align}
+これを整理して
+\begin{align}
+\% Z &=\dfrac{\dfrac{V_{n}}{\sqrt{3} I_{s}} I_{n}}{\dfrac{V_{n}}{\sqrt{3}}} \times 100 \mathrm{[\%]}
+\end{align}
+を得る．
+\begin{align}
+\%Z =\frac{I_{n}}{I_{s}} \times 100 \mathrm{[\%]}
+\end{align}
+
+短絡比
+\begin{align}
+\% Z &=\dfrac{1}{K} \times 100 \\
+\end{align}
+
+
+
+トルク
+始動トルク
+
+短絡比
+\begin{align}
+T=Fr
+\end{align}
+
+電機子反作用\\
+増磁作用\\
+減磁作用\\
+交差磁化作用\\
+
+
+慣性モーメント
+\begin{align}
+J=mr^{2} \mathrm{[kg \cdot m^{2}]}
+\end{align}
+
+
+
+同期速度\\
+\begin{align}
+N_{s}=\frac{2f}{P} \times 60 = \frac{120f}{P} \hspace{3mm} \mathrm{[r/min]}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{align}
+L_{a} \drv{i(t)}{t} + R_{a} i(t) + \frac{1}{C} \int_{t_{0}}^{t_{1}} i(t) dt = e(t)
+\end{align}
+
+\begin{align}
+L_{a} \drv{i(t)}{t} + R_{a} i(t) +v_{a} (t) = e(t)
+\end{align}
+
+\begin{align}
+v_{a} (t) = K_{e} \drv{\theta}{t}\hspace{3mm}(K_{e}= \mbox{逆起電力定数})
+\end{align}
+
+\begin{align}
+\tau(t)=K_{\tau} i(t) \hspace{3mm}(K_{\tau}= \mbox{トルク定数})
+\end{align}
+
+SI単位系では
+\begin{align}
+K_{\tau} = K_{e}
+\end{align}
+より，
+\begin{align}
+i(t) = \frac{\tau(t)}{K_{\tau}}
+\end{align}
+
+\begin{align}
+L_{a} \drv{i(t)}{t} + R_{a} \frac{\tau(t)}{K_{\tau}} + K_{e} \drv{\theta(t)}{t} = e(t)
+\end{align}
+
+\begin{align}
+\tau(t) = K_{\tau} i(t) = J \frac{d^{2} \theta(t)}{dt^{2}} + D \drv{\theta(t)}{t}
+\end{align}
+
+\begin{align}
+\drv{i(t)}{t} = \frac{1}{K_{\tau}} \left( J \frac{d^{3} \theta(t)}{dt^{3}} + D \frac{d^{2} \theta(t)}{d t^{2}}\right)
+\end{align}
+
+\begin{align}
+\frac{L_{a}}{K_{\tau}} \left( J \frac{d^{3} \theta(t)}{dt^{3}} + D \frac{d^{2} \theta(t)}{d t^{2}}\right) + R_{a} \left( J \frac{d^{2} \theta(t)}{dt^{2}} + D \drv{\theta(t)}{t} \right) + K_{e} \drv{\theta(t)}{t} =e(t)
+\end{align}
+
+\begin{align}
+\omega(t) = \drv{\theta(t)}{t}
+\end{align}
+
+\begin{align}
+\frac{L_{a}J}{K_{\tau}} \frac{d^{2} \omega(t)}{dt^{2}} + \left( \frac{L_{a}D}{K_{\tau}} + \frac{R_{a}J}{K_{\tau}} \right) \drv{\omega(t)}{t} + \left( \frac{R_{a}D}{K_{\tau}} +K_{e} \right)\omega(t) =e(t)
+\end{align}
+
+
+\chapter{発電機}
+\chapter{変圧器}
+\section{変圧器の結線}
+\section{変圧器の損失}
+\begin{enumerate}
+\item 損失
+\begin{enumerate}
+\item 無負荷損（鉄損）
+\begin{enumerate}
+\item ヒステリス損
+\item 渦電流損
+\end{enumerate}
+\item 負荷損
+\begin{enumerate}
+\item 銅損
+\item 漂遊負荷損
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+負荷損\\
+銅損\\
+
+無負荷損\\
+鉄損\\
+
+\section{変圧器の効率}
+
+負荷比
+\begin{align}
+\alpha = \sqrt{\frac{P_{i}}{P_{cn}}}
+\end{align}
+
+\begin{align}
+\eta = \frac{\alpha P \cos \theta}{\alpha P \cos \theta + P_{i}+\alpha^{2}P_{cn}} \times 100 \mathrm{[\%]}
+\end{align}
+\section{変圧器の保護}
+劣化等で変圧器に生じる事故
+\begin{enumerate}
+\item 巻線間短絡
+\item 巻線と鉄心間の絶縁破壊による地絡
+\item 高圧巻線と低圧巻線の混触
+\item 巻線の断線
+\end{enumerate}
+\chapter{発電}
+\section{水力発電}
+\begin{align}
+H = 9.8 q H \eta
+\end{align}
+
+\begin{align}
+\eta = \eta_{1} \eta_{2}
+\end{align}
+インバータ\\
+コンバータ\\
+電機子抵抗\\
+整流子\\
+ステータコイル\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\

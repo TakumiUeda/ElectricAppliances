@@ -1,0 +1,74 @@
+% !TEX root =../Electric Appliances.tex
+\chapter{力学}
+\section{質点の力学}
+\begin{align}
+F=m \alpha = m \drv{v}{t} = m \sdrv{x}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+\tau =\int F dx =\int m \drv{v}{t} dx =\int m v dv = \frac{1}{2} m v^{2} \mathrm{[J]}
+\end{align}
+
+\begin{align}
+v =\drv{x}{t} = r \drv{\theta}{t} = r \omega \mathrm{[m/s]}
+\end{align}
+
+\begin{align}
+F = m \drv{t}{v} = m r \drv{\omega}{t} \mathrm{[N]}
+\end{align}
+
+\begin{align}
+T = Fr = mr^{2} \drv{\omega}{t} = I \drv{\omega}{t} = I \sdrv{\theta}{t} \mathrm{[N \cdot m]}
+\end{align}
+Iは慣性モーメント\\
+
+\begin{align}
+I = mv_{b} - mv_{a} = \int_{t_{a}}^{t_{b}} \bm{F} dt \mathrm{[N \cdot s]}
+\end{align}
+力積\\
+\\
+\\
+\\
+\begin{align}
+K = \int T dx = \frac{1}{2} I \omega^{2}
+\end{align}
+\section{剛体の運動}
+\subsection{剛体の自由度}
+トルクはそれぞれの物体が回転するために必要なトルクの合計になるので
+\begin{align}
+T = \sum_{i=1}^{n} F_{i}r_{i} = \sum_{i=1}^{n} m_{i} r^{2}_{i} \drv{\omega}{t} = I \drv{\omega}{t}
+\end{align}
+となり，慣性モーメント$I$は
+\begin{align}
+I = \sum_{i=1}^{n} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \sum_{i=1}^{\infty} m_{i} r^{2}_{i}
+\end{align}
+
+\begin{align}
+I = \int r^{2} dm = I \drv{\omega}{t} = \int \rho r^{2} dV
+\end{align}
+
+\subsection{剛体の運動方程式}
+\begin{align}
+\sum_{i}^{n} \bm{F}_{j} = m \sdrv{\bm{r_{g}}}{t}
+\end{align}
+
+\begin{align}
+\drv{\bm{L}}{t} = \sum_{i}^{n} \left( \bm{r}_{i} \times \bm{F_{i}} \right) = \bm{N}
+\end{align}
+
+
+
+角運動量保存則
+\begin{align}
+\drv{\bm{L}}{t} = 0
+\end{align}
+
+角加速度
+\begin{align}
+\omega = \drv{\bm{\theta}}{t}
+\end{align}
+
